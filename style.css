@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+
+    color: #FFFFFF;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+
+    height: 6rem;
+
+    padding: 0 2rem;
+
+    background-color: #15BFF5;
+
+}
+
+#menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    background-color: #056582;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    color: #FFFFFF;
+
+}
+
+#modal-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#modal-header-close-btn {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    color: #FFFFFF;
+
+    background-color: transparent;
+
+    border: none;
+
+    padding: .5rem 1rem;
+
+    cursor: pointer;
+}
+
+#modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: hidden;
+
+    width: 100%;
+    height: 20%;
+
+    padding: .1rem 2rem;
+
+    border: 0;
+    border-radius: 0.8rem;
+    background-color: #000A18;
+
+    color: #FFFFFF;
+}
+
+#modal::backdrop {
+    background-color: rgba(000, 000, 000, 70%);
+}
+
+#modal-wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#modal-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#modal-input {
+    width: 100%;
+    height: 3rem;
+
+    border: none;
+    border-radius: .8rem;
+
+    padding: 1rem;
+}
+
+#modal-btn {
+    height: 3rem;
+    padding: 0 1rem;
+
+    background-color: #FFFFFF;
+
+    border: none;
+    border-radius: .8rem;
+
+    cursor: pointer;
+}
+
+#modal-btn-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#container, #hoje-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#container {
+    background-color: #000A18;
+}
+
+#hoje-container {
+    background: linear-gradient(to bottom, #15BFF5, #127BF5);
+
+    border-bottom-left-radius: 7rem;
+    border-bottom-right-radius: 7rem;
+    
+    padding: 2rem 3rem;
+}
+
+#local {
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-bottom: 3rem;
+}
+
+#weather-icon {
+    width: 25rem;
+    height: 25rem;
+}
+
+#temperatura-atual {
+    font-size: 12rem;
+    font-weight: 700;
+
+}
+
+#clima-atual {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#data-atual {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#divisor {
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.159);
+    
+    margin: 2rem 0rem;
+}
+
+#info-container, #variacao-container {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 3rem;
+}
+
+#variacao-container {
+    width: 100%;
+
+    padding: 2rem;
+}
+
+.info-wrapper, .icones-variacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: .8rem;
+}
+
+.icones-info, .icones-variacao {
+    width: 20px;
+    height: 20px;
+}
+
+#variacao-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3rem 2rem 0 2rem;
+}
+
+.variacao-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 1rem 1.2rem;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 2rem;
+}
+
+.variacao-box:hover {
+    background-color: #15BFF5;
+}
+
+#prox-dias {
+    cursor: pointer;
+}

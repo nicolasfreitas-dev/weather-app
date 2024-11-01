@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="header">
+            <button id="menu-button">
+                <img
+                    id="menu-icon"
+                    src="images/horizontal-line.svg"
+                    alt="botão de menu"
+                />
+            </button>
+            <dialog id="modal">
+                <div id="modal-wrapper">
+                    <div id="modal-header">
+                        <h3 id="modal-header-title">Pesquisar cidade</h3>
+                        <button id="modal-header-close-btn">X</button>
+                    </div>
+                    <form id="modal-form">
+                        <input id="modal-input" type="text" />
+                        <button id="modal-btn">
+                            <img
+                                id="modal-btn-icon"
+                                src="images/lupas.png"
+                                alt=""
+                            />
+                        </button>
+                    </form>
+                </div>
+            </dialog>
+        </header>
+        <main id="container">
+            <section id="hoje-container">
+                <h1 id="local"></h1>
+                <img id="weather-icon" src="images/tempestade.png" alt="" />
+                <h2 id="temperatura-atual"></h2>
+                <h3 id="clima-atual"></h3>
+                <span id="data-atual"></span>
+                <hr id="divisor" />
+                <div id="info-container">
+                    <div class="info-wrapper">
+                        <img
+                            class="icones-info"
+                            src="images/vento.png"
+                            alt=""
+                        />
+                        <span id="vento"></span>
+                        <span>Vento</span>
+                    </div>
+                    <div class="info-wrapper">
+                        <img
+                            class="icones-info"
+                            src="images/gotas.png"
+                            alt=""
+                        />
+                        <span id="umidade"></span>
+                        <span>Umidade</span>
+                    </div>
+                    <div class="info-wrapper">
+                        <img
+                            class="icones-info"
+                            src="images/pingo-de-chuva.png"
+                            alt=""
+                        />
+                        <span id="chuva"></span>
+                        <span>Chuva</span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="variacao-header">
+                    <h2>Hoje</h2>
+                    <span id="prox-dias">7 dias</span>
+                </div>
+                <div id="variacao-container">
+                    <div class="variacao-box">
+                        <span class="">50º</span>
+                        <img
+                            class="icones-variacao"
+                            src="images/tempestade.png"
+                            alt=""
+                        />
+                        <span>10:00</span>
+                    </div>
+                    <div class="variacao-box">
+                        <span class="">50º</span>
+                        <img
+                            class="icones-variacao"
+                            src="images/tempestade.png"
+                            alt=""
+                        />
+                        <span>10:00</span>
+                    </div>
+                    <div class="variacao-box">
+                        <span class="">50º</span>
+                        <img
+                            class="icones-variacao"
+                            src="images/tempestade.png"
+                            alt=""
+                        />
+                        <span>10:00</span>
+                    </div>
+                    <div class="variacao-box">
+                        <span class="">50º</span>
+                        <img
+                            class="icones-variacao"
+                            src="images/tempestade.png"
+                            alt=""
+                        />
+                        <span>10:00</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
